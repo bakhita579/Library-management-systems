@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Library Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Library Management System</h1>
+        <p>Book Borrowing Form</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Borrow a Book</h2>
+
+        <div class="form-group">
+            <label for="userName">Your Name</label>
+            <input type="text" id="userName" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="borrowDate">Date of Taking Book</label>
+            <input type="date" id="borrowDate">
+        </div>
+
+        <div class="form-group">
+            <label for="returnDate">Expected Return Date</label>
+            <input type="date" id="returnDate">
+        </div>
+
+        <div class="form-group">
+            <label>Available Books</label>
+
+            <div class="books">
+
+                <div class="book">
+                    <input type="checkbox" value="Introduction to JavaScript">
+                    <span>Introduction to JavaScript</span>
+                </div>
+
+                <div class="book">
+                    <input type="checkbox" value="HTML and CSS Basics">
+                    <span>HTML and CSS Basics</span>
+                </div>
+
+                <div class="book">
+                    <input type="checkbox" value="Learning Python">
+                    <span>Learning Python</span>
+                </div>
+
+                <div class="book">
+                    <input type="checkbox" value="Database Management">
+                    <span>Database Management</span>
+                </div>
+
+                <div class="book">
+                    <input type="checkbox" value="Computer Networking">
+                    <span>Computer Networking</span>
+                </div>
+
+                <div class="book">
+                    <input type="checkbox" value="Software Engineering">
+                    <span>Software Engineering</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="select-btn" id="selectButton">
+                Select Books
+            </button>
+
+            <button class="clear-btn" id="clearButton">
+                Clear Selected Books
+            </button>
+        </div>
+
+        <div class="error" id="errorMessage"></div>
+
+        <div class="notification" id="notification">
+
+            <h3>Books Successfully Selected!</h3>
+
+            <p>
+                <strong>Name:</strong>
+                <span id="displayName"></span>
+            </p>
+
+            <p>
+                <strong>Borrow Date:</strong>
+                <span id="displayBorrowDate"></span>
+            </p>
+
+            <p>
+                <strong>Return Date:</strong>
+                <span id="displayReturnDate"></span>
+            </p>
+
+            <p><strong>Selected Books:</strong></p>
+
+            <ul id="selectedBooks"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
